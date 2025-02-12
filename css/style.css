@@ -1181,7 +1181,6 @@ textarea#comment.update_mail::placeholder {
     gap: 20px;
     flex-wrap: wrap;
     position: relative;
-    margin-top: 30px;
 }
 
 .category {
