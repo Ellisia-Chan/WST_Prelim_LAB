@@ -451,6 +451,17 @@ button {
     padding-bottom: 0px;
 }
 
+.coffee_taital2 {
+    width: 100%;
+    float: left;
+    font-size: 25px;
+    color: #3b3b3b;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 0px;
+}
+
 .coffee_section_2 {
     width: 90%;
     margin: 0 auto;
@@ -507,17 +518,48 @@ button {
     padding: 8px;
 }
 
-.read_bt a:hover {
+/* */
+.buy_bt a:hover {
     color: #3b3b3b;
     border: 1px solid #3b3b3b;
 }
 
-#main_slider a.carousel-control-prev {
+.buy_bt {
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+    display: flex;
+}
+
+.buy_bt a {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #d78373;
+    background-color: #d48272;
+    color: #fefefd;
+    text-transform: uppercase;
+    padding: 8px;
+}
+
+.buy_bt a:hover {
+    color: #3b3b3b;
+    border: 1px solid #3b3b3b;
+}
+
+#main_slider a.carousel-control-prev,
+#main_slider2 a.carousel-control-prev {
     left: -50px;
     top: 95px;
 }
 
-#main_slider a.carousel-control-next {
+#main_slider a.carousel-control-next,
+#main_slider a.carousel-control-next,
+#main_slider2 a.carousel-control-next,
+#main_slider2 a.carousel-control-next {
     right: -50px;
     top: 95px;
     color: #fefefd;
@@ -525,7 +567,9 @@ button {
 }
 
 #main_slider .carousel-control-next,
-#main_slider .carousel-control-prev {
+#main_slider .carousel-control-prev,
+#main_slider2 .carousel-control-next,
+#main_slider2 .carousel-control-prev  {
     width: 55px;
     height: 55px;
     opacity: 1;
@@ -537,7 +581,11 @@ button {
 #main_slider .carousel-control-next:focus,
 #main_slider .carousel-control-next:hover,
 #main_slider .carousel-control-prev:focus,
-#main_slider .carousel-control-prev:hover {
+#main_slider .carousel-control-prev:hover,
+#main_slider2 .carousel-control-next:focus,
+#main_slider2 .carousel-control-next:hover,
+#main_slider2 .carousel-control-prev:focus,
+#main_slider2 .carousel-control-prev:hover {
     color: #fefefd;
     background-color: #4a4949;
 }
@@ -1125,3 +1173,66 @@ textarea#comment.update_mail::placeholder {
   .form button:hover {
     background-color: #bb6551;
   }
+
+  /* Categories */
+  .shoe-categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 30px;
+}
+
+.category {
+    position: relative; /* Ensures dropdown positions relative to its category */
+}
+
+.dropdown-btn {
+    color: #d78373;
+    background-color: white;
+    padding: 10px 60px;
+    width: 100%;
+    border: none;
+    border: 1px solid #d78373;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+.dropdown-btn:hover {
+    background: #e5533d;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Positions dropdown below the button */
+    left: 0;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    min-width: 150px;
+    z-index: 1000; /* Ensures dropdown stays above other content */
+}
+
+.sub-category {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s ease;
+}
+
+.sub-category:last-child {
+    border-bottom: none;
+}
+
+.sub-category:hover {
+    background: #f0f0f0;
+}
+
+.show {
+    display: block;
+}
