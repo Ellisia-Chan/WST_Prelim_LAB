@@ -1202,6 +1202,7 @@ textarea#comment.update_mail::placeholder {
 
 .dropdown-btn:hover {
     background: #e5533d;
+    color: white;
 }
 
 .dropdown-content {
